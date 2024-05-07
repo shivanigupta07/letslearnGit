@@ -1,0 +1,18 @@
+write a program to calculate electricity bill using ternary operator
+class electricitybill{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the units consumed:");
+        int units = sc.nextInt();
+
+        int rate =units <101 ? 100*2:
+        units <151 ? 100*2 +(units-100)*3:
+        units <201 ? 100*2 +50*3 + 50*4:
+        100*2+50*3+50*4+(units-200)*5;
+                
+        System.out.println("Electricity bill: $" + rate);
+        sc.close();
+}
+
+    }
+
